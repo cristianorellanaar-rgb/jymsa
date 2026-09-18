@@ -175,7 +175,6 @@
   }
   @media (max-width: 780px){
     .hero-grid{ grid-template-columns:1fr; }
-    .hero-art{ display:none; }
   }
   .hero h1{ font-size:clamp(34px,5.6vw,58px); line-height:0.98; font-weight:800; }
   .hero h1 em{ font-style:normal; color:var(--accent); }
@@ -208,6 +207,9 @@
   .btn-ghost{ background:transparent; color:var(--ink); }
 
   .hero-art{ display:flex; justify-content:center; }
+  @media (max-width: 780px){
+    .hero-art{ display:none; }
+  }
   .globe-frame{ position:relative; width:420px; height:420px; max-width:100%; flex-shrink:0; }
   .globe-photo{
     position:absolute; inset:0;
